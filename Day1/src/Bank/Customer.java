@@ -5,15 +5,16 @@ public class Customer {
 	String name;
 	boolean isLocked;
 	float balance;
+	public static String organization;
 	
 	
-	/*public Customer(int id, String name, boolean isLocked, float balance) {
+	public Customer(int id, String name, boolean isLocked, float balance) {
 		this.id = id;
 		this.name = name;
 		this.isLocked = isLocked;
 		this.balance = balance;
 	}
-	*/
+	
 	/*public int getId() {
 		return id;
 	}
