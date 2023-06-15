@@ -1,8 +1,5 @@
 package Abstraction;
 
-import Bank.ATM;
-import Bank.HDFC;
-
 public class Test {
 
 	public static void main(String[] args) {
