@@ -18,7 +18,7 @@ public class Demo {
 				System.out.print(nums[i][j] + " ");
 			}
 			{
-				System.out.println();
+				System.out.println();  
 			}
 		}
 

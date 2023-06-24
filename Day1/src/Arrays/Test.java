@@ -27,7 +27,33 @@ public class Test {
 		for (int i=0;i<Students.length;i++) {
 			System.out.println(Students[i].name+" : "+Students[i].marks);
 		}
-			
+		
+		
+		System.out.println("Now using for each loop");
+ 
+		
+		for(Student stud : Students) {
+			System.out.println(stud.rollno+" : "+stud.name+" : "+stud.marks);
+
+		}
+		
+		int nums[]=new int[4];
+		nums[0]=100;
+		nums[1]=75;
+		nums[2]=50;
+		nums[3]=25;
+		
+		for(int i=0;i<nums.length;i++) {
+			System.out.println(nums[i]);
+		}
+		
+		System.out.println("Now using for each loop");
+		
+		for(int n:nums) {
+			System.out.println(n);
+
+		}
+
 
 		
 
