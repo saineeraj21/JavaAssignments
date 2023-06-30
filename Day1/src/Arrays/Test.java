@@ -30,7 +30,7 @@ public class Test {
 		
 		
 		System.out.println("Now using for each loop");
- 
+  
 		
 		for(Student stud : Students) {
 			System.out.println(stud.rollno+" : "+stud.name+" : "+stud.marks);
