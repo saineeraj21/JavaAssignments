@@ -2,9 +2,25 @@ package Encapsulation;
 
 public class Human {
 	private int age; // this variable is accessible only in same class
-	private String name;
+	private String name; 
 	
-	public int getAge() //method is used to access the private variables
+	//age is an instant variable
+	// local variable is a .
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	/*public int getAge() //method is used to access the private variables
 	{
 		return age;
 	}
@@ -21,5 +37,7 @@ public class Human {
 	{
 		name = b ;
 	}
+	*/
+	
 
 }
