@@ -19,21 +19,28 @@ public class DemoConnection {
 			String url = "jdbc:mysql://localhost:3306/students";
 			String uname = "root";
 			String pass = "Qwerty@7890";
-			
-			String query = "select * from friends";
+			int id = 7;
+			String name ="Harish";
+			String query = ("insert into friends values (?,?)");
 
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection(url,uname,pass);
-			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery(query);
+			PreparedStatement st = con.prepareStatement(query); //Prepared Statement
+			st.setInt(1, id);
+			st.setString(2,name);
 			
-			while(rs.next())
+			int count = st.executeUpdate(); //DDL,DML,DQL,TCL
+			
+			System.out.println(count + " rows afftected");
+
+			
+			/*while(rs.next())
 			{
 				String UserData = rs.getInt(1)+ " " + rs.getString(2);
 			
 				System.out.println(UserData);
-			}
+			}*/
 			
 			st.close();
 			con.close();
