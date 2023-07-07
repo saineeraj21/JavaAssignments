@@ -20,7 +20,7 @@ public class DemoConnection {
 			String uname = "root";
 			String pass = "Qwerty@7890";
 			
-			String query = "select username from friends where id=3";
+			String query = "select * from friends";
 
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -28,10 +28,12 @@ public class DemoConnection {
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(query);
 			
-			rs.next();
-			String name = rs.getString("username");
+			while(rs.next())
+			{
+				String UserData = rs.getInt(1)+ " " + rs.getString(2);
 			
-			System.out.println(name);
+				System.out.println(UserData);
+			}
 			
 			st.close();
 			con.close();
