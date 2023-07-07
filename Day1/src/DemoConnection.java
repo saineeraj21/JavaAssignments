@@ -14,6 +14,7 @@ import java.sql.*;
 public class DemoConnection {
 
 	public static void main(String[] args) throws Exception
+	
 	{
 			String url = "jdbc:mysql://localhost:3306/students";
 			String uname = "root";
@@ -34,9 +35,7 @@ public class DemoConnection {
 			
 			st.close();
 			con.close();
-		
-	
-		
+			
 	}
 	
 }
